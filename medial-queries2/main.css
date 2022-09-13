@@ -1,3 +1,63 @@
+
+
 body {
   background: papayawhip;
 }
+.container {
+
+  min-height: 100vh;
+  border: 2px solid blue;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.a,.b,.c,.d,.e,.f{
+  margin: .3em;
+}
+
+.a {
+  flex-grow: 1;
+  border: 1px solid palevioletred;
+}
+.group1 {
+
+  flex-grow: 3;
+  /* min-height: 100vh; */
+  /* border: 1px solid rgb(146, 28, 28); */
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;}
+  
+  .group2 {
+    display: flex;
+    flex-direction: row;
+  flex-wrap: nowrap;
+    flex-grow: 1;
+  
+  }
+  
+  .c,
+  .d,
+  .e,
+  .b,
+  .f,
+  .g {
+    border: 1px solid orangered;
+    flex-grow: 1;
+  }
+  
+  .h {
+    flex-grow: 2;
+    border: 1px solid olive;
+  }
+  
+  
+  @media screen and (min-width: 600px) {
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
